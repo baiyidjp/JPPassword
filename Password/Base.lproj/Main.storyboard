@@ -42,11 +42,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9h-pn-3k6">
+                                <rect key="frame" x="141" y="599" width="92" height="30"/>
+                                <state key="normal" title="关闭Touch ID"/>
+                                <connections>
+                                    <action selector="closeTouchID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5s-SY-vAC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2dI-8V-Nkl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1fV-Fe-eD8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L9h-pn-3k6" secondAttribute="bottom" constant="38" id="5ep-fR-wZO"/>
                             <constraint firstItem="UXH-fy-OA5" firstAttribute="centerX" secondItem="2dI-8V-Nkl" secondAttribute="centerX" id="Jxa-eY-umi"/>
+                            <constraint firstItem="L9h-pn-3k6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TYR-vR-yds"/>
                             <constraint firstItem="UXH-fy-OA5" firstAttribute="top" secondItem="2dI-8V-Nkl" secondAttribute="bottom" constant="20" id="bGv-R1-7tL"/>
                             <constraint firstItem="2dI-8V-Nkl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vne-59-Lwq"/>
                         </constraints>

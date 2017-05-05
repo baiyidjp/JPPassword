@@ -35,4 +35,8 @@
     
     self.showPassWord.text = [NSString stringWithFormat:@"密码是---%@",passWordStr];
 }
+- (IBAction)closeTouchID:(id)sender {
+    
+    [[NSUserDefaults standardUserDefaults] setValue:@"off" forKey:@"touchOn"];
+}
 @end
