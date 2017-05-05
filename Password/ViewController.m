@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PassWordView.h"
+
 @interface ViewController ()<PassWordViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *showPassWord;
 
@@ -28,7 +29,6 @@
 - (IBAction)click:(id)sender {
     
     [PassWordView passWordView].delegate = self;
-    
 }
 
 - (void)passWordViewInputDone:(PassWordView *)passWordView WithPassWord:(NSString *)passWordStr {

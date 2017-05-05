@@ -7,6 +7,7 @@
 //
 
 #import "PassWordView.h"
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface PassWordView ()<UITextFieldDelegate>
 
@@ -42,7 +43,8 @@
         [self.textBackView addSubview:self.closeBtn];
         
         [self p_CreatPassWordImage];
-        [self p_ShowView];
+        
+        [self p_Choose];
     }
     return self;
 }
@@ -180,6 +182,11 @@
     }
     
     [self p_ClickClose];
+    
+    NSString *touchOn = [[NSUserDefaults standardUserDefaults] objectForKey:@"touchOn"];
+    if (![touchOn isEqualToString:@"on"]) {
+        [self p_TouchId];
+    }
 }
 
 #pragma mark -点击关闭
@@ -192,6 +199,80 @@
         [self removeFromSuperview];
     }];
 
+}
+
+#pragma mark -Touch ID
+- (void)p_TouchId {
+    
+    LAContext *laContext = [[LAContext alloc] init];
+    laContext.localizedFallbackTitle = @"手动输入密码";
+    NSError *error;
+    
+    if ([laContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
+        
+        [laContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+                  localizedReason:@"指纹验证密码"
+                            reply:^(BOOL success, NSError * _Nullable error) {
+            
+            if (success) {
+                //验证成功执行
+                NSLog(@"指纹识别成功");
+                //在主线程刷新view，不然会有卡顿
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    //保存设置状态
+                    [[NSUserDefaults standardUserDefaults] setValue:@"on" forKey:@"touchOn"];
+                    //隐藏背景
+                    [self p_ClickClose];
+                });
+            }else {
+                NSLog(@"error===%@",error);
+                NSLog(@"code====%ld",error.code);
+                NSLog(@"errorStr ======%@",[error.userInfo objectForKey:NSLocalizedDescriptionKey]);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    
+                if (error.code == -2) {//点击了取消按钮
+                    NSLog(@"点击了取消按钮");
+                    //隐藏背景
+                    [self p_ClickClose];
+                }else if (error.code == -3){//点输入密码按钮
+                    NSLog(@"点输入密码按钮");
+                    [self p_ShowView];
+                }else if (error.code == -1){//连续三次指纹识别错误
+                    NSLog(@"连续三次指纹识别错误");
+                    [self p_ShowView];
+                }else if (error.code == -4){//按下电源键
+                    NSLog(@"按下电源键");
+                }else if (error.code == -8){//Touch ID功能被锁定，下一次需要输入系统密码
+                    NSLog(@"Touch ID功能被锁定，下一次需要输入系统密码");
+                    //隐藏背景
+                    [self p_ClickClose];
+                }else {
+                    NSLog(@"未通过Touch Id指纹验证");
+                    //隐藏背景
+                    [self p_ClickClose];
+                }
+                
+              });
+            }
+        }];
+    }else{
+        //todo goto 输入密码页面
+        NSLog(@"error====%@",error);
+        NSLog(@"抱歉，touchId 不可用");
+    }
+}
+
+#pragma mark -判断条件
+- (void)p_Choose {
+    
+    NSString *touchOn = [[NSUserDefaults standardUserDefaults] objectForKey:@"touchOn"];
+    if ([touchOn isEqualToString:@"on"]) {
+        
+        [self p_TouchId];
+    }else {
+        
+        [self p_ShowView];
+    }
 }
 
 

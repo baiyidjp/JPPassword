@@ -23,6 +23,7 @@
 		F53DC7B21EBC13B900D9C87F /* zhifu-close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7A91EBC13B900D9C87F /* zhifu-close@3x.png */; };
 		F53DC7B51EBC142700D9C87F /* PassWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53DC7B41EBC142700D9C87F /* PassWordView.m */; };
 		F53DC7B71EBC53DF00D9C87F /* 密码输入.gif in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7B61EBC53DF00D9C87F /* 密码输入.gif */; };
+		F53DC7BA1EBC6AE700D9C87F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53DC7B91EBC6AE700D9C87F /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		F53DC7B31EBC142700D9C87F /* PassWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassWordView.h; sourceTree = "<group>"; };
 		F53DC7B41EBC142700D9C87F /* PassWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassWordView.m; sourceTree = "<group>"; };
 		F53DC7B61EBC53DF00D9C87F /* 密码输入.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "密码输入.gif"; sourceTree = "<group>"; };
+		F53DC7B91EBC6AE700D9C87F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53DC7BA1EBC6AE700D9C87F /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +68,7 @@
 			children = (
 				F53DC7891EBC138A00D9C87F /* Password */,
 				F53DC7881EBC138A00D9C87F /* Products */,
+				F53DC7B81EBC6AE700D9C87F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 				F53DC7B41EBC142700D9C87F /* PassWordView.m */,
 			);
 			path = PasswordView;
+			sourceTree = "<group>";
+		};
+		F53DC7B81EBC6AE700D9C87F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F53DC7B91EBC6AE700D9C87F /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +386,7 @@
 				F53DC7A01EBC138A00D9C87F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
