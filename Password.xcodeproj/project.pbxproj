@@ -13,6 +13,16 @@
 		F53DC7951EBC138A00D9C87F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7931EBC138A00D9C87F /* Main.storyboard */; };
 		F53DC7971EBC138A00D9C87F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7961EBC138A00D9C87F /* Assets.xcassets */; };
 		F53DC79A1EBC138A00D9C87F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7981EBC138A00D9C87F /* LaunchScreen.storyboard */; };
+		F53DC7AB1EBC13B900D9C87F /* password_in@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7A21EBC13B900D9C87F /* password_in@2x.png */; };
+		F53DC7AC1EBC13B900D9C87F /* password_in@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7A31EBC13B900D9C87F /* password_in@3x.png */; };
+		F53DC7AD1EBC13B900D9C87F /* pssword_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7A41EBC13B900D9C87F /* pssword_bg@2x.png */; };
+		F53DC7AE1EBC13B900D9C87F /* pssword_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7A51EBC13B900D9C87F /* pssword_bg@3x.png */; };
+		F53DC7AF1EBC13B900D9C87F /* yuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7A61EBC13B900D9C87F /* yuan@2x.png */; };
+		F53DC7B01EBC13B900D9C87F /* yuan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7A71EBC13B900D9C87F /* yuan@3x.png */; };
+		F53DC7B11EBC13B900D9C87F /* zhifu-close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7A81EBC13B900D9C87F /* zhifu-close@2x.png */; };
+		F53DC7B21EBC13B900D9C87F /* zhifu-close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7A91EBC13B900D9C87F /* zhifu-close@3x.png */; };
+		F53DC7B51EBC142700D9C87F /* PassWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53DC7B41EBC142700D9C87F /* PassWordView.m */; };
+		F53DC7B71EBC53DF00D9C87F /* 密码输入.gif in Resources */ = {isa = PBXBuildFile; fileRef = F53DC7B61EBC53DF00D9C87F /* 密码输入.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,17 @@
 		F53DC7961EBC138A00D9C87F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F53DC7991EBC138A00D9C87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F53DC79B1EBC138A00D9C87F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53DC7A21EBC13B900D9C87F /* password_in@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "password_in@2x.png"; sourceTree = "<group>"; };
+		F53DC7A31EBC13B900D9C87F /* password_in@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "password_in@3x.png"; sourceTree = "<group>"; };
+		F53DC7A41EBC13B900D9C87F /* pssword_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pssword_bg@2x.png"; sourceTree = "<group>"; };
+		F53DC7A51EBC13B900D9C87F /* pssword_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pssword_bg@3x.png"; sourceTree = "<group>"; };
+		F53DC7A61EBC13B900D9C87F /* yuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yuan@2x.png"; sourceTree = "<group>"; };
+		F53DC7A71EBC13B900D9C87F /* yuan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yuan@3x.png"; sourceTree = "<group>"; };
+		F53DC7A81EBC13B900D9C87F /* zhifu-close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhifu-close@2x.png"; sourceTree = "<group>"; };
+		F53DC7A91EBC13B900D9C87F /* zhifu-close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhifu-close@3x.png"; sourceTree = "<group>"; };
+		F53DC7B31EBC142700D9C87F /* PassWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassWordView.h; sourceTree = "<group>"; };
+		F53DC7B41EBC142700D9C87F /* PassWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassWordView.m; sourceTree = "<group>"; };
+		F53DC7B61EBC53DF00D9C87F /* 密码输入.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "密码输入.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,8 @@
 		F53DC7891EBC138A00D9C87F /* Password */ = {
 			isa = PBXGroup;
 			children = (
+				F53DC7A11EBC13B900D9C87F /* Image */,
+				F53DC7AA1EBC13B900D9C87F /* PasswordView */,
 				F53DC78D1EBC138A00D9C87F /* AppDelegate.h */,
 				F53DC78E1EBC138A00D9C87F /* AppDelegate.m */,
 				F53DC7901EBC138A00D9C87F /* ViewController.h */,
@@ -77,6 +100,31 @@
 				F53DC78B1EBC138A00D9C87F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F53DC7A11EBC13B900D9C87F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F53DC7B61EBC53DF00D9C87F /* 密码输入.gif */,
+				F53DC7A21EBC13B900D9C87F /* password_in@2x.png */,
+				F53DC7A31EBC13B900D9C87F /* password_in@3x.png */,
+				F53DC7A41EBC13B900D9C87F /* pssword_bg@2x.png */,
+				F53DC7A51EBC13B900D9C87F /* pssword_bg@3x.png */,
+				F53DC7A61EBC13B900D9C87F /* yuan@2x.png */,
+				F53DC7A71EBC13B900D9C87F /* yuan@3x.png */,
+				F53DC7A81EBC13B900D9C87F /* zhifu-close@2x.png */,
+				F53DC7A91EBC13B900D9C87F /* zhifu-close@3x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		F53DC7AA1EBC13B900D9C87F /* PasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				F53DC7B31EBC142700D9C87F /* PassWordView.h */,
+				F53DC7B41EBC142700D9C87F /* PassWordView.m */,
+			);
+			path = PasswordView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +158,7 @@
 				TargetAttributes = {
 					F53DC7861EBC138A00D9C87F = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = U37X4645WQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,9 +186,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53DC7AB1EBC13B900D9C87F /* password_in@2x.png in Resources */,
 				F53DC79A1EBC138A00D9C87F /* LaunchScreen.storyboard in Resources */,
+				F53DC7AD1EBC13B900D9C87F /* pssword_bg@2x.png in Resources */,
+				F53DC7B01EBC13B900D9C87F /* yuan@3x.png in Resources */,
+				F53DC7AE1EBC13B900D9C87F /* pssword_bg@3x.png in Resources */,
 				F53DC7971EBC138A00D9C87F /* Assets.xcassets in Resources */,
+				F53DC7B11EBC13B900D9C87F /* zhifu-close@2x.png in Resources */,
+				F53DC7B71EBC53DF00D9C87F /* 密码输入.gif in Resources */,
+				F53DC7AF1EBC13B900D9C87F /* yuan@2x.png in Resources */,
+				F53DC7B21EBC13B900D9C87F /* zhifu-close@3x.png in Resources */,
 				F53DC7951EBC138A00D9C87F /* Main.storyboard in Resources */,
+				F53DC7AC1EBC13B900D9C87F /* password_in@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +211,7 @@
 				F53DC7921EBC138A00D9C87F /* ViewController.m in Sources */,
 				F53DC78F1EBC138A00D9C87F /* AppDelegate.m in Sources */,
 				F53DC78C1EBC138A00D9C87F /* main.m in Sources */,
+				F53DC7B51EBC142700D9C87F /* PassWordView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +333,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U37X4645WQ;
 				INFOPLIST_FILE = Password/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.djp.Password;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -285,10 +346,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U37X4645WQ;
 				INFOPLIST_FILE = Password/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.djp.Password;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

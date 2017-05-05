@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "PassWordView.h"
+@interface ViewController ()<PassWordViewDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *showPassWord;
 
 @end
 
@@ -24,6 +25,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)click:(id)sender {
+    
+    [PassWordView passWordView].delegate = self;
+    
+}
 
-
+- (void)passWordViewInputDone:(PassWordView *)passWordView WithPassWord:(NSString *)passWordStr {
+    
+    self.showPassWord.text = [NSString stringWithFormat:@"密码是---%@",passWordStr];
+}
 @end
